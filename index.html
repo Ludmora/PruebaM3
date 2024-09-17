@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ---fuente roboto menu  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <section class="container1">
+        <div class="video-container">
+
+            <video src="assets/img/zeldabg.mp4" autoplay muted loop></video>
+        </div>
+
+
+
+        <header class="hero">
+
+            <nav class="nav container" id="nav">
+                <h2 class="nav__logo">TuLogo.</h2>
+                <ul class="nav__links">
+                    <li class="nav__item"><a href="#" class="nav__link">inicio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">acerca de </a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">contacto</a></li>
+                </ul>
+                <a href="#nav" class="nav__open">
+                    <img src="assets/img/menu3.png" class="nav__icon">
+                </a>
+                <a href="#" class="nav__close">
+                    <img src="assets/img/menuclose.png" class="nav__icon">
+                </a>
+
+            </nav>
+            <!-- ----audio -->
+            <img onclick="audio.play();" src="assets/img/ocarina.png" alt="">
+
+
+            <!-- ---CHAT -->
+            <div class="body1">
+                <div class="main_container">
+                    <div class="navbar">
+                        <div class="nav_left">
+                            <img src="assets/img/logochat.png" alt="" class="main_logo">
+                        </div>
+                        <div class="nav_right">
+                            <div class="search_bar">
+                                <img src="assets/img/busqueda1.webp" alt="">
+                                <input type="text" name="" placeholder="Busque aqui...">
+                            </div>
+                            <img src="" alt="" class="setting">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </section>
+
+
+
+    
+
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "./assets/img/audi.mp3";
+
+    </script>
+</body>
+
+</html>
