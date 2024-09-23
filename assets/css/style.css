@@ -271,7 +271,7 @@ input {
     width: 100%;
     min-height: 80vh;
     height: 80%;
-    background: blue;
+    background-color: rgba(22, 99, 187, 0.808) ;
     border-radius: 25px;
     display: flex;
     justify-content: flex-start;
@@ -668,7 +668,7 @@ input {
         top: 0;
         left: 0;
         z-index: 29;
-        background-color: beige;
+        background-color: rgb(59, 144, 165);
         padding: 20px;
         display: none;
 
