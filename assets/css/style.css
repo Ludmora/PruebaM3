@@ -76,7 +76,7 @@ body {
     --state-menu: translate(-100%);
 
 
-    padding: 20px 0;
+    padding: 1px 0;
     display: grid;
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
@@ -853,4 +853,96 @@ input {
     }
 
 }
-@media
+
+/* -----animacion */
+
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+}
+
+/* Ajuste general para todas las imágenes */
+.image {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: absolute;
+    animation: move 10s infinite linear;
+}
+
+.image1 {
+    width: 35px;
+    height: 50px;
+    background-size: cover;
+    position: absolute;
+    animation: move 10s infinite linear;
+}
+
+/* Efecto de correr alternando imágenes */
+@keyframes runEffect {
+    0%, 100% {
+        background-image: url('../img/i1.png'); /* Imagen estática */
+    }
+    50% {
+        background-image: url('../img/i2.png'); /* Imagen de correr */
+    }
+}
+
+@keyframes runEffect2 {
+    0%, 100% {
+        background-image: url('../img/i8.png'); /* Imagen estática */
+    }
+    50% {
+        background-image: url('../img/i6.png'); /* Imagen de correr */
+    }
+}
+
+@keyframes runEffect3 {
+    0%, 100% {
+        background-image: url('../img/i3.png'); /* Imagen estática */
+    }
+    50% {
+        background-image: url('../img/i4.png'); /* Imagen de correr */
+    }
+}
+
+/* Animaciones específicas para cada imagen */
+.image1 {
+    background-image: url('../img/i1.png');
+    animation: move 26s infinite linear, runEffect 0.5s infinite;
+    left: 20px
+}
+
+.image2 {
+    background-image: url('../img/i7.png');
+    animation: move 12s infinite linear, runEffect2 0.5s infinite;
+    left: 120px; /* Separación entre la imagen 1 y 2 */
+}
+
+.image3 {
+    background-image: url('../img/i3.png');
+    animation: move 20s infinite linear, runEffect3 0.5s infinite;
+    left: 240px; /* Separación entre la imagen 2 y 3 */
+}
+
+/* Imagen pequeña con animación propia */
+.small-image {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/i5.png');
+    /* background-size: cover; */
+    animation: move 4s infinite linear;
+}
+
+/* Animación de movimiento que recorre todo el ancho de la pantalla */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vh); /* Moverse a lo largo de todo el ancho de la ventana */
+    }
+}
