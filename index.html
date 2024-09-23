@@ -25,14 +25,18 @@
 
 
         <header class="hero">
+            <!-- ----audio -->
 
             <nav class="nav container" id="nav">
-                <h2 class="nav__logo">TuLogo.</h2>
+                <h2 class="nav__logo"> <a href="#"><img id="img_button" src="assets/img/logo.png" alt="Logo"
+                            onclick="Ocultar()"></a></h2>
                 <ul class="nav__links">
                     <li class="nav__item"><a href="#" class="nav__link">inicio</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">blog</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">acerca de </a></li>
                     <li class="nav__item"><a href="#" class="nav__link">contacto</a></li>
+                    <a href="#"><img class="audio" id="playPauseAudio" src="assets/img/ocarina.png"
+                            alt="Reproducir"></a>
                 </ul>
                 <a href="#nav" class="nav__open">
                     <img src="assets/img/menu3.png" class="nav__icon">
@@ -42,8 +46,6 @@
                 </a>
 
             </nav>
-            <!-- ----audio -->
-            <img onclick="audio.play();" src="assets/img/ocarina.png" alt="">
 
 
             <!-- ---CHAT -->
@@ -51,15 +53,158 @@
                 <div class="main_container">
                     <div class="navbar">
                         <div class="nav_left">
+                            <button class="btn" id="toggleBtn" onclick="myFuntion">
+                                <img src="assets/img/menu4.png" alt="">
+                            </button>
                             <img src="assets/img/logochat.png" alt="" class="main_logo">
                         </div>
                         <div class="nav_right">
-                            <div class="search_bar">
+                            <form class="search_bar">
                                 <img src="assets/img/busqueda1.webp" alt="">
                                 <input type="text" name="" placeholder="Busque aqui...">
-                            </div>
-                            <img src="" alt="" class="setting">
+                            </form>
+                            <img src="assets/img/settings.png" alt="" class="setting">
+                            <a href="#" class="user">
+                                <img src="assets/img/LINK.jpg" alt="">
+                            </a>
                         </div>
+                    </div>
+                    <div class="bottom_sec">
+                        <div class="side_menu" id="SideMenu">
+                            <form class="search_bar">
+                                <img src="assets/img/busqueda1.webp" alt="">
+                                <input type="text" name="" placeholder="Busque aqui...">
+                            </form>
+                            <ul>
+                                <li>
+                                    <img src="assets/img/Home.png" alt="">
+                                    <a href="#" class="active">Inicio</a>
+                                </li>
+                                <li>
+                                    <img src="assets/img/grupo.png" alt="">
+                                    <a href="#">grupos</a>
+                                </li>
+                                <li>
+                                    <img src="assets/img/gente.png" alt="">
+                                    <a href="#">Perfiles</a>
+                                </li>
+                                <li>
+                                    <img src="assets/img/notificacion.png" alt="">
+                                    <a href="#">Notificaciones</a>
+                                </li>
+
+                            </ul>
+                            <div class="chat_sec">
+                                <div class="chat">
+                                    <img src="assets/img/zelda.jpg" alt="">
+                                    <p>Zelda Hyrule
+                                    <h6 class="time">3:25p.m</h6> <a class="color" href="">hola como estas</a></p>
+                                </div>
+                            </div>
+                            <div class="chat_sec">
+                                <div class="chat">
+                                    <img src="assets/img/urbosa.jpg" alt="">
+                                    <p>Urbosa Riju
+                                    <h6 class="time">2:10p.m</h6> <a id="boldText"><b>hola como estas</b></a></p>
+                                </div>
+                            </div>
+                            <div class="chat_sec">
+                                <div class="chat">
+                                    <img src="assets/img/ganon.jpg" alt="">
+                                    <p>Ganondorf Dragmire
+                                    <h6 class="time">ayer</h6> <a class="color" href="">Te encontrare</a></p>
+                                </div>
+                            </div>
+                            <div class="chat_sec">
+                                <div class="chat">
+                                    <img src="assets/img/rey.webp" alt="">
+                                    <p>Rey Rhoam Hyrule
+                                    <h6 class="time">18-9</h6> <a class="color" href="">Link Necesito hablar contigo</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="chat_section">
+                            <div class="chat_header">
+                                <div class="user_header">
+                                    <span class="user_main">
+                                        <img src="assets/img/zelda.jpg" alt="">
+                                    </span>
+                                    <h2>Zelda Hyrule</h2>
+                                </div>
+                                <img src="assets/img/menu4.png" alt="" class="theedot">
+                            </div>
+
+                            <div class="all_chat">
+                                <div class="chat_box">
+                                    <img class="perfil" src="assets/img/zelda.jpg" alt="">
+                                    <div class="chat_text">
+                                        <p>Hola Link </p>
+                                        <h6>5:00 a.m.<h6>
+                                    </div>
+                                </div>
+
+                                <div class="chat_box my_message">
+                                    <img class="perfil" src="assets/img/LINK.jpg" alt="">
+                                    <div class="chat_text">
+                                        <p>Hola Zelda como estas </p>
+                                        <h6>5:10 a.m.<img class="visto" src="assets/img/visto.png" alt="">
+                                            <h6>
+                                    </div>
+                                </div>
+
+                                <div class="chat_box">
+                                    <img class="perfil" src="assets/img/zelda.jpg" alt="">
+                                    <div class="chat_text">
+                                        <p> Vienes a la Fiesta en Hyrule</p>
+                                        <h6>5:13 a.m.<h6>
+                                    </div>
+                                </div>
+
+                                <div class="chat_box my_message">
+                                    <img class="perfil" src="assets/img/LINK.jpg" alt="">
+                                    <div class="chat_text">
+                                        <p>Hola Zelda como estas </p>
+                                        <h6>5:10 a.m.<img class="visto" src="assets/img/visto.png" alt="">
+                                            <h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_type">
+                                <img src="assets/img/mas.png" alt="">
+
+                                <form class="message_type">
+                                    <input type="text" name="text" placeholder="Introduzca  el mensaje">
+                                    <!-- <img src="assets/img/adjuntar.png" alt=""> -->
+
+                                    <button id="attachButton"></button>
+
+                                    <!-- Menú desplegable solo visual -->
+                                    <div class="attach-menu">
+                                        <div class="attach-item">
+                                            <img src="assets/img/imagen.png" alt="Imagen">
+                                            <span>Imagen</span>
+                                        </div>
+                                        <div class="attach-item">
+                                            <img src="assets/img/documento.png" alt="Documento">
+                                            <span>Documento</span>
+                                        </div>
+                                        <div class="attach-item">
+                                            <img src="assets/img/camara.png" alt="Cámara">
+                                            <span>Cámara</span>
+                                        </div>
+                                    </div>
+
+
+
+                                    <img src="assets/img/emoticonos.png" alt="">
+                                </form>
+                                <img src="assets/img/enviar.png" alt="" class="send_icon">
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -69,13 +214,9 @@
 
 
 
-    
 
-    <script type="text/javascript">
-        const audio = new Audio();
-        audio.src = "./assets/img/audi.mp3";
 
-    </script>
+    <script src="assets/JS/script.js"></script>
 </body>
 
 </html>
