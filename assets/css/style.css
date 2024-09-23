@@ -823,7 +823,7 @@ input {
     }
 
     .all_chat {
-        width: 76%;
+        width: 95%;
         padding: 15px 4% 0 4%;
     }
 
@@ -833,12 +833,24 @@ input {
         gap: 12px;
         margin-bottom: 10px;
     }
-     .chat_box .perfil{
+
+    .chat_box .perfil {
         width: 20px;
         height: 20px;
-       
-     }
 
+    }
 
+    .chat_text h6 {
+        font-size: 10px;
+    }
+
+    .chat_text p {
+        font-size: 12px;
+    }
+
+    .my_message {
+        margin-left: 30%;
+    }
 
 }
+@media
