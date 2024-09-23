@@ -862,6 +862,7 @@ input {
     justify-content: center;
     overflow: hidden; 
     height: 50px;
+    width: 100%;
     } 
     /*overflow: hidden; Para evitar que aparezca scroll horizontal */
 
@@ -880,7 +881,7 @@ input {
     height: 50px;
     background-size: cover;
     position: absolute;
-    animation: move 10s infinite linear;
+    animation: move 30s infinite linear;
    
    
 }
@@ -890,7 +891,7 @@ input {
     height: 50px;
     background-size: cover;
     position: absolute;
-    animation: move 10s infinite linear;
+    animation: move 30s infinite linear;
    
 }
 
@@ -925,7 +926,7 @@ input {
 /* Animaciones específicas para cada imagen */
 .image1 {
     background-image: url('../img/i1.png');
-    animation: move 5s infinite linear, runEffect 0.5s infinite;
+    animation: move 15s infinite linear, runEffect 0.5s infinite;
     left: 0px;
 }
 
@@ -957,6 +958,6 @@ input {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(100vh); /* Moverse a lo largo de todo el ancho de la ventana */
+        transform: translateX(100vw); /* Moverse a lo largo de todo el ancho de la ventana */
     }
 }
