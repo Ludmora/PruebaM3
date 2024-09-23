@@ -857,6 +857,14 @@ input {
 /* -----animacion */
 
 
+.animacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    overflow: hidden;  Para evitar que aparezca scroll horizontal 
+} 
+
 .image-container {
     display: flex;
     justify-content: space-around;
@@ -879,6 +887,7 @@ input {
     background-size: cover;
     position: absolute;
     animation: move 10s infinite linear;
+    z-index: 34;
 }
 
 /* Efecto de correr alternando imágenes */
@@ -933,7 +942,7 @@ input {
     width: 20px;
     height: 20px;
     background-image: url('../img/i5.png');
-    /* background-size: cover; */
+    background-size: cover;
     animation: move 4s infinite linear;
 }
 
